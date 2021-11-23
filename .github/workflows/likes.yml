@@ -1,0 +1,22 @@
+name: Delete old likes
+
+on:
+  schedule:
+    - cron: '0 1 * * *'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: yarn install
+      - run: yarn likes
+        env:
+          TWITTER_KEY: ${{ secrets.TWITTER_KEY }}
+          TWITTER_SECRET: ${{ secrets.TWITTER_SECRET }}
+          TWITTER_ACCESS_TOKEN_KEY: ${{ secrets.TWITTER_ACCESS_TOKEN_KEY }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          DELETE_AFTER_DAYS: ${{ secrets.DELETE_AFTER_DAYS }}

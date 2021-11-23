@@ -1,0 +1,22 @@
+{
+  "description": "Delete your old tweets & likes automatically with Github Actions",
+  "author": "Adrian Tombu <adrian@otso.fr> (https://otso.fr)",
+  "license": "GPL-3.0-or-later",
+  "repository": "https://github.com/adriantombu/twitter-cleaning",
+  "bugs": {
+    "url": "https://github.com/adriantombu/twitter-cleaning/issues",
+    "email": "adrian@otso.fr"
+  },
+  "scripts": {
+    "tweets": "node tweets.js",
+    "likes": "node likes.js"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "dotenv": "^10.0.0",
+    "twitter-api-v2": "^1.6.5"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}
