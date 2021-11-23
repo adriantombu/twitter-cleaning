@@ -9,6 +9,6 @@ module.exports.twitter = new TwitterApi({
   accessSecret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
 })
 
-module.exports.treshold = dayjs().subtract(process.env.DELETE_AFTER_DAYS, 'day')
+module.exports.treshold = dayjs().subtract(process.env.DELETE_AFTER_DAYS || 14, 'day')
 
 module.exports.sleep = () => new Promise((r) => setTimeout(r, Math.random() * (750 - 250 + 1) + 250))
