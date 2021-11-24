@@ -12,7 +12,6 @@
     "likes": "node likes.js"
   },
   "dependencies": {
-    "dayjs": "^1.10.7",
     "dotenv": "^10.0.0",
     "twitter-api-v2": "^1.6.5"
   },

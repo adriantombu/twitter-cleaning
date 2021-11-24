@@ -1,4 +1,3 @@
-const dayjs = require('dayjs')
 const { twitter, treshold, sleep } = require('./config')
 
 const main = async () => {
@@ -6,8 +5,8 @@ const main = async () => {
   const likedTweets = await twitter.v2.userLikedTweets(user.id, { 'tweet.fields': 'created_at' })
 
   for await (const likedTweet of likedTweets) {
-    if (dayjs(likedTweet.created_at).isBefore(treshold)) {
-      console.log(`Unliking tweet ${likedTweet.id}: ${likedTweet.text}`)
+    if (Date.parse(likedTweet.created_at) <= treshold) {
+      console.log(`Unliking tweet ${likedTweet.id}`)
 
       await twitter.v2.unlike(user.id, likedTweet.id)
       await sleep()
