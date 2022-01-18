@@ -8,11 +8,11 @@ dotenv@^10.0.0:
   integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
 
 prettier@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
-  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
 twitter-api-v2@^1.6.5:
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/twitter-api-v2/-/twitter-api-v2-1.6.5.tgz#881ff1ed2cd0f165897213f65b022a4bf265d71b"
-  integrity sha512-lmUZBth2N4l2eQC+aav3PO5U4K6p8IVd/fvJgZczBnIGxFo0HQpkBZFSvj86eKaUTIo5DU+UWVD7JgeaAlesgg==
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/twitter-api-v2/-/twitter-api-v2-1.9.1.tgz#157116b7351bbc9f0567066f2779fdafe7b4c523"
+  integrity sha512-AZj7nO49MOjS/0kxbHZe947qmhoInnQ+orFEc2ACtgfqFjZezX0CbIQyxtg0wUiTGHnh9yjAC+4cNm+ifXjRlw==
