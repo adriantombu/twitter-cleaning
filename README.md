@@ -11,6 +11,19 @@ Thanks to the witchcraft of Github Actions [Cron](https://en.wikipedia.org/wiki/
 - Add the environment variables in your forked repository (`Secrets` page in the `Settings` tab) (look at the `.env.example` file to find the proper naming)
 - Enjoy an automated cleaning of your oldest tweets and likes every 24 hours
 
+## Configuration
+
+### Deletion days depth
+
+Set `DELETE_AFTER_DAYS` parameter to define the number of days ("older than") after which the twitter cleaning will be performed - tweet deletion and likes deletion. The default value of the `DELETE_AFTER_DAYS` parameter is 14 days.
+
+### Twitter API
+
+- `TWITTER_KEY`: [API Key](https://developer.twitter.com/en/portal/register/keys)
+- `TWITTER_SECRET`: [API Key Secret](https://developer.twitter.com/en/portal/register/keys)
+- `TWITTER_ACCESS_TOKEN_KEY`: [Access Token](https://developer.twitter.com/en/portal/dashboard)
+- `TWITTER_ACCESS_TOKEN_SECRET`: [Access Token Secret](https://developer.twitter.com/en/portal/dashboard)
+
 ## Important note
 
 If you have many thousand tweets and likes, they will not be deleted on the first pass because of the Twitter API rate limiting. I don't want to abuse Github Actions and the Twitter API so it will stay as is. It will just take some days to clean up everything the first time you use this script.
