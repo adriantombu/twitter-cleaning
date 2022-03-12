@@ -13,7 +13,16 @@ Thanks to the witchcraft of Github Actions [Cron](https://en.wikipedia.org/wiki/
 
 ## Configuration
 
+### Deletion days depth
+
 Set `DELETE_AFTER_DAYS` parameter to define the number of days ("older than") after which the twitter cleaning will be performed - tweet deletion and likes deletion. The default value of the `DELETE_AFTER_DAYS` parameter is 14 days.
+
+### Twitter API
+
+- `TWITTER_KEY`: [API Key](https://developer.twitter.com/en/portal/register/keys)
+- `TWITTER_SECRET`: [API Key Secret](https://developer.twitter.com/en/portal/register/keys)
+- `TWITTER_ACCESS_TOKEN_KEY`: [Access Token](https://developer.twitter.com/en/portal/dashboard)
+- `TWITTER_ACCESS_TOKEN_SECRET`: [Access Token Secret](https://developer.twitter.com/en/portal/dashboard)
 
 ## Important note
 
