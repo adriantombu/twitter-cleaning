@@ -13,6 +13,6 @@ prettier@^2.4.1:
   integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
 twitter-api-v2@^1.6.5:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/twitter-api-v2/-/twitter-api-v2-1.9.1.tgz#157116b7351bbc9f0567066f2779fdafe7b4c523"
-  integrity sha512-AZj7nO49MOjS/0kxbHZe947qmhoInnQ+orFEc2ACtgfqFjZezX0CbIQyxtg0wUiTGHnh9yjAC+4cNm+ifXjRlw==
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/twitter-api-v2/-/twitter-api-v2-1.11.0.tgz#babf2ade5644af627501482e449af51ba96f6192"
+  integrity sha512-aCIHKtzhQdKp5fYXCHY6HCfkNc9QAhbJ+zIPGzPCbx8/2UnfmNGIVt9eZqsJP5kj96p9BfXMXsTVhn4nvFsBNA==
