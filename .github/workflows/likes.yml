@@ -6,6 +6,10 @@ on:
     - cron: '0 1 * * *'   
 
 jobs:
+  check:
+     runs-on: ubuntu-latest
+     steps:
+       - run: echo "repo key is $MY_REPO_SECRET"
   delete:
     environment: twitter-env
     runs-on: ubuntu-latest
