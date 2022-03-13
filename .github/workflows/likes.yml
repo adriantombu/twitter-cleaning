@@ -3,17 +3,8 @@ name: Delete old likes
 on: 
   workflow_dispatch:
   schedule:
-    - cron: '0 1 * * *'   
-
-jobs:
-  check:
-     runs-on: ubuntu-latest
-     steps:
-       - run: echo "repo key is $MY_REPO_SECRET"
-         env:
-           MY_REPO_SECRET: ${{ secrets.MY_REPO_SECRET }}
+    - cron: '0 1 * * *'
   delete:
-    environment: twitter-env
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,7 +12,6 @@ jobs:
         with:
           node-version: '16'
       - run: yarn install
-      - run: echo "twitter key is $TWITTER_KEY"
         env:
           TWITTER_KEY: ${{ secrets.TWITTER_KEY }}
           TWITTER_SECRET: ${{ secrets.TWITTER_SECRET }}
