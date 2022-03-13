@@ -1,8 +1,8 @@
 # Delete your old tweets & likes automatically
 
-Unless you're some fancy public figure, no one is interested in what you wrote or liked two weeks ago (not even you) so why would you ever need to keep thousand of old data on Twitter ?
+Unless you're some fancy public figure, no one is interested in what you wrote or liked two weeks ago (not even you) so why would you ever need to keep thousand of old data on Twitter?
 
-Thanks to the witchcraft of Github Actions [Cron](https://en.wikipedia.org/wiki/Cron), you'll get to keep a nice and tidy Twitter account without even having to think about it. Pretty nice, hey ?
+Thanks to the witchcraft of Github Actions [Cron](https://en.wikipedia.org/wiki/Cron), you'll get to keep a nice and tidy Twitter account without even having to think about it. Pretty nice, hey?
 
 ## How to use it
 
@@ -40,8 +40,8 @@ You need an access token with [read & write permissions](https://twittercommunit
 ### Run the actions
 
 You have 2 options:
-- Trigger manually the GitHub `Workflow` from the action tab
-- Set the CRON. By default, it performs the deletion every day
+- Trigger manually the GitHub `Workflow` from the action tab.
+- Set the CRON. By default, it performs the deletion every day.
 
 ## Important note
 
