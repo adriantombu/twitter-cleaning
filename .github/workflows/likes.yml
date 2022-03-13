@@ -10,6 +10,8 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - run: echo "repo key is $MY_REPO_SECRET"
+         env:
+           MY_REPO_SECRET: ${{ secrets.MY_REPO_SECRET }}
   delete:
     environment: twitter-env
     runs-on: ubuntu-latest
