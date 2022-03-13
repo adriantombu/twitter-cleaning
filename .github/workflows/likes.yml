@@ -1,9 +1,9 @@
 name: Delete old likes
 
-on: 
+on:
   workflow_dispatch:
   schedule:
-    - cron: '0 1 * * *'   
+    - cron: '0 1 * * *'
 
 jobs:
   delete:
@@ -14,6 +14,12 @@ jobs:
         with:
           node-version: '16'
       - run: yarn install
+        env:
+          TWITTER_KEY: ${{ secrets.TWITTER_KEY }}
+          TWITTER_SECRET: ${{ secrets.TWITTER_SECRET }}
+          TWITTER_ACCESS_TOKEN_KEY: ${{ secrets.TWITTER_ACCESS_TOKEN_KEY }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          DELETE_AFTER_DAYS: ${{ secrets.DELETE_AFTER_DAYS }}
       - run: yarn likes
         env:
           TWITTER_KEY: ${{ secrets.TWITTER_KEY }}
