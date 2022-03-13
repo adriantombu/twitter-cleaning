@@ -2,7 +2,7 @@ require('dotenv').config()
 const { TwitterApi } = require('twitter-api-v2')
 
 module.exports.twitter = new TwitterApi({
-  appKey: twitter-env.env.TWITTER_KEY,
+  appKey: process.env.TWITTER_KEY,
   appSecret: process.env.TWITTER_SECRET,
   accessToken: process.env.TWITTER_ACCESS_TOKEN_KEY,
   accessSecret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
