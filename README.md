@@ -19,8 +19,13 @@ Set `DELETE_AFTER_DAYS` parameter to define the number of days ("older than") af
 
 ### Twitter API
 
+Consumer API Key & Secret
+
 - `TWITTER_KEY`: [API Key](https://developer.twitter.com/en/portal/register/keys)
 - `TWITTER_SECRET`: [API Key Secret](https://developer.twitter.com/en/portal/register/keys)
+
+Access token and secret
+
 - `TWITTER_ACCESS_TOKEN_KEY`: [Access Token](https://developer.twitter.com/en/portal/dashboard)
 - `TWITTER_ACCESS_TOKEN_SECRET`: [Access Token Secret](https://developer.twitter.com/en/portal/dashboard)
 
