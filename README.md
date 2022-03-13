@@ -29,6 +29,8 @@ Access token and secret
 - `TWITTER_ACCESS_TOKEN_KEY`: [Access Token](https://developer.twitter.com/en/portal/dashboard)
 - `TWITTER_ACCESS_TOKEN_SECRET`: [Access Token Secret](https://developer.twitter.com/en/portal/dashboard)
 
+Note: you need an access token with [read & write permissions](https://twittercommunity.com/t/read-only-access-token/165276).
+
 ## Important note
 
 If you have many thousand tweets and likes, they will not be deleted on the first pass because of the Twitter API rate limiting. I don't want to abuse Github Actions and the Twitter API so it will stay as is. It will just take some days to clean up everything the first time you use this script.
