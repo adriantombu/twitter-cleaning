@@ -1,0 +1,22 @@
+name: Keep cron alive
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: fregante/setup-git-user@v1
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: node ./cron.js
+      - run: |
+          git add .
+          git commit -m "🧟 Keep cron alive"
+          git fetch origin main
+          git push origin main
