@@ -1,8 +1,8 @@
 const { twitter, treshold, sleep } = require('./config')
 
 const main = async () => {
-  const user = await twitter.currentUser()
-  const tweets = await twitter.v2.userTimeline(user.id, { 'tweet.fields': 'created_at' })
+  const user = await twitter.v2.me()
+  const tweets = await twitter.v2.userTimeline(user.data.id, { 'tweet.fields': 'created_at' })
 
   for await (const tweet of tweets) {
     if (Date.parse(tweet.created_at) <= treshold) {
