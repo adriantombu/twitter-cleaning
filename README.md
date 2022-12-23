@@ -1,6 +1,6 @@
 # Delete your old tweets & likes automatically
 
-Unless you're some fancy public figure, no one is interested in what you wrote or liked two weeks ago (not even you) so why would you ever need to keep thousand of old data on Twitter?
+Unless you're some fancy public figure, no one is interested in what you wrote or liked two weeks ago (not even you) so why would you ever need to keep thousands of old data on Twitter?
 
 Thanks to the witchcraft of Github Actions [Cron](https://en.wikipedia.org/wiki/Cron), you'll get to keep a nice and tidy Twitter account without even having to think about it. Pretty nice, hey?
 
@@ -21,21 +21,7 @@ Set `DELETE_AFTER_DAYS` parameter to define the number of days ("older than") af
 
 #### Twitter API
 
-You need to [generate](https://developer.twitter.com) the following 4 keys and secrets.
-
-*Consumer API Key & Secret*
-
-- `TWITTER_KEY`: [API Key](https://developer.twitter.com/en/portal/register/keys)
-- `TWITTER_SECRET`: [API Key Secret](https://developer.twitter.com/en/portal/register/keys)
-
-*Access token and secret*
-
-You need an access token with [read & write permissions](https://twittercommunity.com/t/read-only-access-token/165276).
-
-- `TWITTER_ACCESS_TOKEN_KEY`: [Access Token](https://developer.twitter.com/en/portal/dashboard)
-- `TWITTER_ACCESS_TOKEN_SECRET`: [Access Token Secret](https://developer.twitter.com/en/portal/dashboard)
-
-![image](https://user-images.githubusercontent.com/226993/158071256-c01b175a-468e-411b-8429-57bc4ee7f307.png)
+You can find a full explanation on how to retrieve the credentials on [TWITTER-CRENDENTIALS.md](./TWITTER-CRENDENTIALS.md).
 
 ### Run the actions
 
@@ -45,7 +31,9 @@ You have 2 options:
 
 ## Important note
 
-If you have many thousand tweets and likes, they will not be deleted on the first pass because of the Twitter API rate limiting. I don't want to abuse Github Actions and the Twitter API so it will stay as is. It will just take some days to clean up everything the first time you use this script.
+Users that have thousands of tweets and likes won't be able to clean them on the first pass because of the Twitter API rate limiting: to give tou an idea, we are allowed to delete 50 tweets every 15 minutes and do 50 unlikes every 15 minutes. It will just take a while to clean up everything depending on the amount of tweets and likes you have.
+
+If you don't want to wait, you can pay for a service like [TweetDelete](https://tweetdelete.net/), [Tweet Deleter](https://tweetdeleter.com/) or [Tweet Eraser](https://www.tweeteraser.com/).
 
 ## Disclaimer
 
