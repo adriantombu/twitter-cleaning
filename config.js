@@ -10,4 +10,4 @@ module.exports.twitter = new TwitterApi({
 
 module.exports.treshold = Date.now() - 86400000 * process.env.DELETE_AFTER_DAYS || 14
 
-module.exports.sleep = () => new Promise((r) => setTimeout(r, Math.random() * (750 - 250 + 1) + 250))
+module.exports.sleep = (reset) => new Promise((r) => setTimeout(r, reset * 1000 - Date.now()))
