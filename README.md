@@ -4,6 +4,8 @@ Unless you're some fancy public figure, no one is interested in what you wrote o
 
 Thanks to the witchcraft of Github Actions [Cron](https://en.wikipedia.org/wiki/Cron), you'll get to keep a nice and tidy Twitter account without even having to think about it. Pretty nice, hey?
 
+> ⚠️ Starting April 2023, Twitter has restricted the access to the free tier and it's now impossible to delete your likes unless you pay for the Basic tier (at 100$ per month, it's probably not worth it) 
+
 ## How to use it
 
 - Get a Twitter API token on [https://developer.twitter.com](https://developer.twitter.com) and save your credentials
