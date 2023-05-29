@@ -2,6 +2,10 @@ const { twitter, treshold, sleep } = require('./config')
 const { ApiResponseError } = require('twitter-api-v2')
 
 const main = async () => {
+  console.log(
+    "⚠️  Starting April 2023, Twitter has restricted the access to the free tier and it's now impossible to delete your likes unless you pay for the Basic tier (at 100$ per month, it's probably not worth it)"
+  )
+
   const user = await twitter.v2.me()
   const likedTweets = await twitter.v2.userLikedTweets(user.data.id, { 'tweet.fields': 'created_at' })
 
