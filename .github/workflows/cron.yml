@@ -9,11 +9,11 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: fregante/setup-git-user@v1
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: fregante/setup-git-user@v2
+      - uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '20'
       - run: node ./cron.js
       - run: |
           git add .
